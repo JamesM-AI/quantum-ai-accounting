@@ -1,46 +1,13 @@
 class QuantumAITech {
     constructor() {
-        this.currentSection = 'dashboard';
-        this.expenses = [
-            {
-                id: 1,
-                date: '2025-06-28',
-                merchant: 'Office Supplies UK',
-                amount: 156.78,
-                category: 'Office Supplies',
-                description: 'Stationery and printing supplies',
-                status: 'Categorized',
-                receipt: true
-            },
-            {
-                id: 2,
-                date: '2025-06-27',
-                merchant: 'Fuel Station',
-                amount: 45.20,
-                category: 'Transport',
-                description: 'Business travel fuel',
-                status: 'Categorized',
-                receipt: true
-            },
-            {
-                id: 3,
-                date: '2025-06-26',
-                merchant: 'Software Solutions',
-                amount: 299.99,
-                category: 'Software',
-                description: 'Annual subscription',
-                status: 'Pending Review',
-                receipt: false
-            }
-        ];
-        this.chatMessages = [];
+        this.currentSection = 'market-pricing';
         this.init();
     }
 
     init() {
         this.setupNavigation();
         this.marketPricing = new MarketPricing(document.getElementById('market-pricing'));
-        // Initialize other features here as needed
+        this.marketPricing.show();
     }
 
     setupNavigation() {
