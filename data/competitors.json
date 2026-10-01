@@ -1,0 +1,430 @@
+{
+  "competitors": [
+    {
+      "id": "aiconsultant-co-ke",
+      "name": "AI Consultant Kenya",
+      "market": "KE",
+      "url": "https://aiconsultant.co.ke/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "Kenyan AI consultancy selling audits, WhatsApp AI agents and monthly AI monitoring/tuning retainers, aimed at larger SMEs.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "ai-chatbot-ke",
+      "name": "ai-chatbot.ke",
+      "market": "KE",
+      "url": "https://ai-chatbot.ke/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro"
+      ],
+      "why_comparable": "Kenyan done-for-you AI chatbot build-and-manage service priced as low KES subscriptions.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "black-shepherd-technologies",
+      "name": "Black Shepherd Technologies",
+      "market": "KE",
+      "url": "https://blackshepherdtechnologies.com/services/ai-chatbots/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro"
+      ],
+      "why_comparable": "Kenyan agency selling fixed-price WhatsApp/web bots plus a monthly bot maintenance plan to small businesses.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "granular-it",
+      "name": "Granular IT",
+      "market": "KE",
+      "url": "https://granularit.com/pricing",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Nairobi/London managed IT provider publishing per-user monthly support plans in KES for 5-50+ user firms.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "graph-technologies",
+      "name": "Graph Technologies",
+      "market": "KE",
+      "url": "https://clutch.co/profile/graph-technologies-254729092897",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Nairobi software house (10-49 staff) with chatbot/conversational AI focus listed on Clutch.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "kenzobe",
+      "name": "Kenzobe",
+      "market": "KE",
+      "url": "https://www.kenzobe.com/ai-websites",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Nairobi web/software company selling AI chatbot and WhatsApp-integrated website packages in KES.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "logix-saas",
+      "name": "Logix SaaS",
+      "market": "KE",
+      "url": "https://www.logixsaas.com/services/ai-apps-development",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "Kenyan AI development company building AI agents, WhatsApp bots, RAG assistants and process automation for businesses.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "manageit-africa",
+      "name": "ManageIT Africa",
+      "market": "KE",
+      "url": "https://manageitafrica.com/",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Kenyan managed IT provider selling per-user IT-as-a-service (support, security, backup) to SMEs.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "opasit",
+      "name": "OpasIT (Opas Secure)",
+      "market": "KE",
+      "url": "https://opassecure.com/solutions/sme-business",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Kenyan MSP publishing productised monthly managed-IT packages by staff band (10/50/200 staff).",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "quest-designers",
+      "name": "Quest Designers",
+      "market": "KE",
+      "url": "https://www.questdesigners.com/services/ai-solutions",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Nairobi web/AI developer (est. 2014) building LLM chatbots and WhatsApp AI bots with M-Pesa for Kenyan businesses.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "smartbizsystems",
+      "name": "SmartBizSystems",
+      "market": "KE",
+      "url": "https://www.smartbizsystems.co.ke/pricing",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Kenyan agency selling WhatsApp bots, OpenAI chatbots and CRM/M-Pesa automation with setup fee plus monthly plan.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "spike-crest-digital",
+      "name": "Spike Crest Digital",
+      "market": "KE",
+      "url": "https://spikecrestdigital.com/services/ai-automation-nairobi/",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Nairobi AI automation agency selling WhatsApp chatbot/CRM/lead-qualification builds as fixed-fee projects plus retainers.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "velora-systems",
+      "name": "Velora Systems",
+      "market": "KE",
+      "url": "https://velora.co.ke/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Kenyan AI automation firm selling WhatsApp AI chatbots, AI receptionists and n8n workflows on setup fee plus monthly retainer.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "adatis",
+      "name": "Adatis",
+      "market": "UK",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/910423065846685",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "UK data & AI consultancy offering Copilot readiness/AI implementation plus tiered monthly managed-service plans.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "ai-optimised",
+      "name": "AI Optimised",
+      "market": "UK",
+      "url": "https://ai-optimised.co.uk/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro"
+      ],
+      "why_comparable": "UK specialist agency building managed AI chatbots (web + WhatsApp) for SMEs on setup + monthly model.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "axivon",
+      "name": "Axivon",
+      "market": "UK",
+      "url": "https://www.axivon-ai.com/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "UK AI automation agency selling automations, AI agents and monthly support retainers to growing service businesses.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "connection-technologies",
+      "name": "Connection Technologies",
+      "market": "UK",
+      "url": "https://connection-technologies.co.uk/",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "UK MSP publishing per-user managed IT pricing with volume tiers and no standard onboarding fee.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "dead-simple-computing",
+      "name": "Dead Simple Computing",
+      "market": "UK",
+      "url": "https://deadsimplecomputing.co.uk/",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "Berkshire MSP publishing a fully managed per-user rate and monthly minimum for SMEs.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "deeperthanblue",
+      "name": "DeeperThanBlue",
+      "market": "UK",
+      "url": "https://clutch.co/profile/deeperthanblue",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "Sheffield integration/cloud firm (10-49 staff) listed on Clutch for chatbots and conversational AI.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "delegait",
+      "name": "Delegait",
+      "market": "UK",
+      "url": "https://delegait.co.uk/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro"
+      ],
+      "why_comparable": "UK provider of fully managed AI chatbots for small businesses with setup fee plus monthly management.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "elevate-ai",
+      "name": "Elevate AI",
+      "market": "UK",
+      "url": "https://www.elevateai.co.uk/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "UK AI automation consultancy for SMEs with published pilot, implementation and support-retainer pricing.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "jbi-digital",
+      "name": "JBi Digital",
+      "market": "UK",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/422456753315689",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "UK digital agency selling generative-AI chatbot builds, with day rates published on G-Cloud 14.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "mustard-it",
+      "name": "Mustard IT",
+      "market": "UK",
+      "url": "https://www.mustardit.co.uk/",
+      "service_lines": [
+        "managed_support"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "London SME managed IT provider with published per-user support packs (benchmark for the managed-support line).",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "red-eagle-tech",
+      "name": "Red Eagle Tech",
+      "market": "UK",
+      "url": "https://redeagle.tech/",
+      "service_lines": [
+        "ai_implementation"
+      ],
+      "segments": [
+        "micro",
+        "mid"
+      ],
+      "why_comparable": "London software/AI firm building bespoke chatbots and AI integrations for UK SMEs at fixed prices.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    },
+    {
+      "id": "sharp-code",
+      "name": "Sharp Code",
+      "market": "UK",
+      "url": "https://www.sharpcode.co.uk/",
+      "service_lines": [
+        "ai_implementation",
+        "managed_support"
+      ],
+      "segments": [
+        "mid"
+      ],
+      "why_comparable": "UK AI product-engineering firm doing LLM/AI integrations into existing business software.",
+      "active": true,
+      "added": "2026-10-01",
+      "pending_review": false
+    }
+  ]
+}

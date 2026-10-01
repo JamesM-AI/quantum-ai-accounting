@@ -39,6 +39,7 @@ class QuantumAITech {
 
     init() {
         this.setupNavigation();
+        this.marketPricing = new MarketPricing(document.getElementById('market-pricing'));
         // Initialize other features here as needed
     }
 
@@ -68,8 +69,13 @@ class QuantumAITech {
         });
 
         this.currentSection = target;
+
+        if (target === 'market-pricing' && this.marketPricing) {
+            this.marketPricing.show();
+        }
     }
 }
+
 
 window.addEventListener('DOMContentLoaded', () => {
     const app = new QuantumAITech();
