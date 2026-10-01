@@ -14,6 +14,7 @@
                 <div class="logo"><h2>Quantum & AI Technologies</h2></div>
                 <nav class="main-nav">
                     <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+                    <button class="nav-btn" data-section="market-pricing">Market Pricing</button>
                     <button class="nav-btn" data-section="expenses">Expenses</button>
                     <button class="nav-btn" data-section="ai-assistant">AI Assistant</button>
                     <button class="nav-btn" data-section="compliance">Compliance</button>
@@ -48,10 +49,124 @@
             </div>
         </section>
 
+        <!-- Market Pricing Section -->
+        <section id="market-pricing" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Market Pricing</h1>
+                    <p>What comparable AI implementation and managed support firms charge in the UK and Kenya. Updated every Saturday.</p>
+                </div>
+
+                <div class="mp-filters" role="group" aria-label="Filters">
+                    <label>Market
+                        <select id="mp-market">
+                            <option value="UK">UK</option>
+                            <option value="KE">Kenya</option>
+                        </select>
+                    </label>
+                    <label>Service
+                        <select id="mp-service">
+                            <option value="all">All services</option>
+                            <option value="ai_implementation">AI implementation</option>
+                            <option value="managed_support">Managed IT / AI support</option>
+                        </select>
+                    </label>
+                    <label>Client size
+                        <select id="mp-segment">
+                            <option value="all">All sizes</option>
+                            <option value="micro">Micro / small (1–49)</option>
+                            <option value="mid">Mid-market (50–249)</option>
+                        </select>
+                    </label>
+                    <label class="mp-check">
+                        <input type="checkbox" id="mp-exclude-estimates" />
+                        Exclude estimates from medians
+                    </label>
+                </div>
+
+                <div id="mp-status" class="mp-status" role="status">Loading pricing data…</div>
+
+                <div class="metrics-grid" id="mp-kpis"></div>
+
+                <div class="mp-grid">
+                    <figure class="mp-card">
+                        <figcaption>
+                            <h3>Setup fees by firm</h3>
+                            <p>One-off implementation or onboarding fee, ex-VAT. Bar spans the quoted low to high.</p>
+                        </figcaption>
+                        <div class="mp-legend" aria-hidden="true"></div>
+                        <div class="mp-chart" id="mp-setup-wrap"><canvas id="mp-setup-chart" aria-label="Setup fee ranges by firm"></canvas></div>
+                    </figure>
+                    <figure class="mp-card">
+                        <figcaption>
+                            <h3>Maintenance fees by firm</h3>
+                            <p>Ongoing support or retainer, converted to a monthly ex-VAT figure.</p>
+                        </figcaption>
+                        <div class="mp-legend" aria-hidden="true"></div>
+                        <div class="mp-chart" id="mp-maint-wrap"><canvas id="mp-maint-chart" aria-label="Monthly maintenance fee ranges by firm"></canvas></div>
+                    </figure>
+                </div>
+
+                <div class="mp-grid">
+                    <figure class="mp-card">
+                        <figcaption>
+                            <h3>Median setup fee over time</h3>
+                            <p>One point per weekly run.</p>
+                        </figcaption>
+                        <div class="mp-chart mp-chart-short"><canvas id="mp-trend-setup" aria-label="Median setup fee by week"></canvas></div>
+                    </figure>
+                    <figure class="mp-card">
+                        <figcaption>
+                            <h3>Median monthly maintenance over time</h3>
+                            <p>One point per weekly run.</p>
+                        </figcaption>
+                        <div class="mp-chart mp-chart-short"><canvas id="mp-trend-maint" aria-label="Median monthly maintenance by week"></canvas></div>
+                    </figure>
+                </div>
+
+                <div class="mp-grid">
+                    <section class="mp-card" aria-labelledby="mp-changes-h">
+                        <h3 id="mp-changes-h">Changes this week</h3>
+                        <ul id="mp-changes" class="mp-list"></ul>
+                    </section>
+                    <section class="mp-card" aria-labelledby="mp-proposed-h">
+                        <h3 id="mp-proposed-h">Proposed firms awaiting approval</h3>
+                        <p class="mp-note">Found by the weekly search. Not counted in any median until approved in <code>data/competitors.json</code>.</p>
+                        <ul id="mp-proposed" class="mp-list"></ul>
+                    </section>
+                </div>
+
+                <section class="mp-card" aria-labelledby="mp-table-h">
+                    <h3 id="mp-table-h">All price points</h3>
+                    <div class="mp-table-wrap">
+                        <table class="mp-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Firm</th>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Fee</th>
+                                    <th scope="col">As quoted</th>
+                                    <th scope="col">Comparable figure</th>
+                                    <th scope="col">Evidence</th>
+                                    <th scope="col">Verified</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mp-table-body"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <p class="mp-footnote" id="mp-footnote"></p>
+            </div>
+        </section>
+
         <!-- Other sections go here -->
 
     </main>
 
+    <script src="vendor/chart-4.4.1.umd.js"></script>
+    <script src="market-pricing.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
