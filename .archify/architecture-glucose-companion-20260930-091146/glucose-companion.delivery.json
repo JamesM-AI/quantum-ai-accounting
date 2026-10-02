@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d194e205-0f69-4eb3-92b0-4bc09ef99636",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/candidate.json",
+  "output": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.html",
+  "specification": {
+    "sha256": "3e7b5dfb62210141e41978456b52cc18de28310bdb9012c342ec860f786288d9",
+    "bytes": 7902
+  },
+  "artifact": {
+    "sha256": "231dbbd537ad5054c68f2fda691d2e3d7782c1ef01b112df98a720e4681f5559",
+    "bytes": 767297
+  }
+}

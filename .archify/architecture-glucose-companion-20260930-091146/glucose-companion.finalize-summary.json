@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/candidate.json",
+    "sha256": "d24c1c74e12a13f6e854be09a255e43660f06b0fb2ece4826cdb26cccc9e9b91",
+    "bytes": 5819
+  },
+  "artifact": {
+    "path": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.html",
+    "sha256": "94714be67c10edb0c58402fee367d5ea15e59dfa9142d88a94d0f22f67a9c4a7",
+    "bytes": 767361
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.finalize.json",
+    "summaryReceipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.finalize-summary.json",
+    "browserCheckReceipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.browser-check.json"
+  },
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 5597,
+  "visualReviewRecommendation": {
+    "action": "inspect-route-readability",
+    "signals": {
+      "routesOverSuggestedBends": 1
+    },
+    "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+    "affectedRoutes": {
+      "crossings": [],
+      "detours": [
+        {
+          "relationship": {
+            "id": "store-to-dashboard",
+            "from": "store",
+            "to": "dashboard",
+            "label": "reads",
+            "collectionIndex": 8,
+            "artifactIndex": 9
+          },
+          "bends": 3,
+          "stretch": 1
+        }
+      ],
+      "truncated": false
+    },
+    "hints": [
+      "store → dashboard needs 3 bends: move node store or dashboard so they share a row or column with matching centers, or sit diagonally with a clear corner."
+    ],
+    "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+  }
+}

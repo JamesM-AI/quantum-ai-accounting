@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/candidate.json",
+    "sha256": "3e7b5dfb62210141e41978456b52cc18de28310bdb9012c342ec860f786288d9",
+    "bytes": 7902
+  },
+  "artifact": {
+    "path": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/glucose-companion.html",
+    "sha256": "231dbbd537ad5054c68f2fda691d2e3d7782c1ef01b112df98a720e4681f5559",
+    "bytes": 767297
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/review-2/glucose-companion.finalize.json",
+    "summaryReceipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/review-2/glucose-companion.finalize-summary.json",
+    "browserCheckReceipt": "/home/user/quantum-ai-accounting/.archify/architecture-glucose-companion-20260930-091146/review-2/glucose-companion.browser-check.json"
+  },
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4430
+}

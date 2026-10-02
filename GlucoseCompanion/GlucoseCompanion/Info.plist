@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>GlucoseCompanion reads your blood glucose, carbohydrate, insulin, workout, heart rate, and step data from Health to show trends and help estimate insulin dosing suggestions.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>GlucoseCompanion writes the carb and insulin entries you log in-app back to Health so your records stay consistent across apps.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.acuityprofessional.glucosecompanion.dexcomRefresh</string>
+		<string>com.acuityprofessional.glucosecompanion.ratioRecompute</string>
+	</array>
+</dict>
+</plist>

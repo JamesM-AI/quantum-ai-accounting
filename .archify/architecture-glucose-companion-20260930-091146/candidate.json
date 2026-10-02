@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Glucose Companion Architecture",
+    "output": ".archify/architecture-glucose-companion-20260930-091146/glucose-companion.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/JamesRMcG/quantum-ai-accounting",
+      "provider": "github",
+      "revision": "58fdc0d2011c251838d57448b8a78e898859942c"
+    }
+  },
+  "components": [
+    {
+      "id": "healthkit",
+      "type": "external",
+      "label": "Apple Health",
+      "sublabel": "HealthKit store",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        130,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/HealthKitSync/Sources/HealthKitSync/AnchoredQuerySync.swift",
+          "line": 263,
+          "label": "HKAnchoredObjectQuery"
+        }
+      ]
+    },
+    {
+      "id": "hksync",
+      "type": "backend",
+      "label": "HealthKitSync",
+      "sublabel": "observer + anchored sync",
+      "pos": [
+        300,
+        300
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/HealthKitSync/Sources/HealthKitSync/BackgroundDeliveryManager.swift",
+          "line": 55,
+          "end_line": 79,
+          "label": "HKObserverQuery"
+        },
+        {
+          "path": "GlucoseCompanion/Packages/HealthKitSync/Sources/HealthKitSync/AnchoredQuerySync.swift",
+          "line": 100,
+          "end_line": 107,
+          "label": "re-entrancy guard"
+        }
+      ]
+    },
+    {
+      "id": "store",
+      "type": "database",
+      "label": "SwiftData Store",
+      "sublabel": "local only, on device",
+      "pos": [
+        580,
+        300
+      ],
+      "size": [
+        180,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/GlucoseCore/Sources/GlucoseCore/Persistence/ModelContainerFactory.swift",
+          "line": 5,
+          "end_line": 22,
+          "label": "schema + local container"
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "type": "backend",
+      "label": "Learning Engines",
+      "sublabel": "ratios, activity, corrections",
+      "pos": [
+        570,
+        140
+      ],
+      "size": [
+        200,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/RatioLearning/Sources/RatioLearning/MealExcursionMatcher.swift",
+          "line": 24,
+          "label": "meal matching"
+        },
+        {
+          "path": "GlucoseCompanion/Packages/ActivityInsights/Sources/ActivityInsights/ActivityAdjustedRatioEstimator.swift",
+          "line": 46
+        },
+        {
+          "path": "GlucoseCompanion/Packages/CorrectionLearning/Sources/CorrectionLearning/CorrectionSensitivityEstimator.swift",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "id": "bolus",
+      "type": "backend",
+      "label": "BolusCalculator",
+      "sublabel": "guardrails + IOB",
+      "pos": [
+        880,
+        140
+      ],
+      "size": [
+        160,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/BolusCalculator/Sources/BolusCalculator/BolusCalculator.swift",
+          "line": 59,
+          "label": "calculate()"
+        },
+        {
+          "path": "GlucoseCompanion/GlucoseCompanion/BolusSuggestion/BolusSuggestionView.swift",
+          "line": 314,
+          "label": "called from UI"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "type": "frontend",
+      "label": "Bolus Review",
+      "sublabel": "user edits, then logs",
+      "pos": [
+        880,
+        300
+      ],
+      "size": [
+        160,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/GlucoseCompanion/BolusSuggestion/BolusReviewSheet.swift",
+          "line": 152,
+          "end_line": 164,
+          "label": "inserts carbs + dose"
+        }
+      ]
+    },
+    {
+      "id": "dexcom",
+      "type": "external",
+      "label": "Dexcom Share",
+      "sublabel": "unofficial API",
+      "pos": [
+        40,
+        460
+      ],
+      "size": [
+        130,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/DexcomShareClient/Sources/DexcomShareClient/DexcomEndpoints.swift",
+          "line": 43,
+          "end_line": 47,
+          "label": "endpoint paths"
+        }
+      ]
+    },
+    {
+      "id": "dexcomclient",
+      "type": "backend",
+      "label": "DexcomShareClient",
+      "sublabel": "polling, Keychain login",
+      "pos": [
+        300,
+        460
+      ],
+      "size": [
+        170,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/Packages/DexcomShareClient/Sources/DexcomShareClient/DexcomPollingService.swift",
+          "line": 32,
+          "label": "startPolling"
+        },
+        {
+          "path": "GlucoseCompanion/GlucoseCompanion/App/AppContainer.swift",
+          "line": 95,
+          "end_line": 125,
+          "label": "inserts readings"
+        }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "type": "frontend",
+      "label": "Dashboard & Trends",
+      "sublabel": "charts, insights",
+      "pos": [
+        880,
+        460
+      ],
+      "size": [
+        160,
+        60
+      ],
+      "sources": [
+        {
+          "path": "GlucoseCompanion/GlucoseCompanion/Trends/ActivityTrendView.swift",
+          "line": 15,
+          "label": "activity trends"
+        },
+        {
+          "path": "GlucoseCompanion/GlucoseCompanion/Trends/CorrectionInsightsView.swift",
+          "line": 19
+        }
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "On-device (iPhone)",
+      "wraps": [
+        "hksync",
+        "store",
+        "learning",
+        "bolus",
+        "review",
+        "dexcomclient",
+        "dashboard"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "hk-to-sync",
+      "from": "healthkit",
+      "to": "hksync",
+      "label": "background sync",
+      "variant": "emphasis"
+    },
+    {
+      "id": "sync-to-store",
+      "from": "hksync",
+      "to": "store",
+      "label": "dedup + insert"
+    },
+    {
+      "id": "dexcom-to-client",
+      "from": "dexcom",
+      "to": "dexcomclient",
+      "label": "poll",
+      "variant": "dashed"
+    },
+    {
+      "id": "client-to-store",
+      "from": "dexcomclient",
+      "to": "store",
+      "label": "new readings",
+      "variant": "dashed",
+      "toSide": "bottom"
+    },
+    {
+      "id": "store-to-learning",
+      "from": "store",
+      "to": "learning",
+      "label": "history",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "learning-to-bolus",
+      "from": "learning",
+      "to": "bolus",
+      "label": "learned sensitivity"
+    },
+    {
+      "id": "bolus-to-review",
+      "from": "bolus",
+      "to": "review",
+      "label": "suggestion",
+      "variant": "security"
+    },
+    {
+      "id": "review-to-store",
+      "from": "review",
+      "to": "store",
+      "label": "log dose"
+    },
+    {
+      "id": "store-to-dashboard",
+      "from": "store",
+      "to": "dashboard",
+      "label": "reads"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Sync",
+      "items": [
+        "HealthKit is primary; Dexcom Share is a backup path",
+        "Sync is main-actor pinned and skips overlapping runs"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Learning",
+      "items": [
+        "Meals paired with boluses, then regressed per time block and activity level",
+        "Learned ratios are written back by the Insights screen"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Safety",
+      "items": [
+        "Nothing is auto-delivered; the user reviews and logs every dose",
+        "Activity adjustment may only shrink a correction"
+      ]
+    }
+  ]
+}
